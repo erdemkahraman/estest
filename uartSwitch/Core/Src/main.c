@@ -117,12 +117,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-		flag = 0;
-		if(__HAL_UART_GET_FLAG(&huart2, UART_FLAG_IDLE)){
-			flag = 1;
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
-			HAL_Delay(100);
-		}
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
